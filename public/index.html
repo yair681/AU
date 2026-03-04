@@ -3,395 +3,257 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>הסכם גן ילדים</title>
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700;900&family=Heebo:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>הסכם גן ילדים - הגן הקסום | עמותת הילה תשפ"ו</title>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Heebo:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#faf7f2;--warm:#fffef9;--gold:#c9a84c;--gold-l:#e8d5a3;--gold-d:#9a7a2e;--forest:#2d4a3e;--forest-l:#3d6355;--dark:#1a1a1a;--mid:#444;--light:#777;--border:#d4c5a9;--red:#c0392b;--sec:#f5f0e8}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--cream);font-family:'Heebo','Arial Hebrew',sans-serif;color:var(--dark);direction:rtl;min-height:100vh}
-.top-band{background:var(--forest);height:6px}
-.gold-band{background:linear-gradient(90deg,var(--gold-d),var(--gold),var(--gold-l),var(--gold),var(--gold-d));height:3px}
-.page-wrapper{max-width:780px;margin:0 auto;padding:0 20px 60px}
-.form-header{text-align:center;padding:48px 20px 36px;position:relative}
-.form-header::after{content:'';display:block;width:80px;height:3px;background:linear-gradient(90deg,var(--gold-d),var(--gold));margin:24px auto 0;border-radius:2px}
-.ornament{font-size:26px;margin-bottom:12px;color:var(--gold);letter-spacing:12px}
-.form-header h1{font-family:'Frank Ruhl Libre',serif;font-size:26px;font-weight:700;color:var(--forest);line-height:1.5;margin-bottom:8px}
-.form-header .sub{font-size:14px;color:var(--light)}
-.contract-block{background:var(--warm);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:4px;padding:28px 32px;margin-bottom:28px;line-height:1.9;font-size:14px;color:var(--mid);white-space:pre-line}
-.sec-title{display:flex;align-items:center;gap:12px;margin:36px 0 20px}
-.sec-title::before,.sec-title::after{content:'';flex:1;height:1px;background:var(--border)}
-.sec-title h2{font-family:'Frank Ruhl Libre',serif;font-size:17px;font-weight:700;color:var(--forest);white-space:nowrap;padding:6px 18px;border:1.5px solid var(--gold);border-radius:2px;background:var(--warm)}
-.form-sec{background:var(--warm);border:1px solid var(--border);border-radius:4px;padding:26px 28px;margin-bottom:22px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
-.row.single{grid-template-columns:1fr}
-.fg{display:flex;flex-direction:column;gap:5px}
-label.fl{font-size:13px;font-weight:600;color:var(--forest);display:flex;align-items:center;gap:4px}
-.req{color:var(--red);font-size:14px}
-input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea{width:100%;padding:9px 13px;border:1.5px solid var(--border);border-radius:3px;font-family:'Heebo',sans-serif;font-size:14px;color:var(--dark);background:var(--cream);transition:border-color .2s,box-shadow .2s;direction:rtl;outline:none}
-input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.12);background:#fff}
-input.error,textarea.error{border-color:var(--red) !important}
-textarea{resize:vertical;min-height:90px;line-height:1.6}
-.radio-g{display:flex;gap:20px;padding:6px 0}
-.radio-item{display:flex;align-items:center;gap:7px;cursor:pointer;font-size:14px;font-weight:500;color:var(--mid)}
-.radio-item input{width:17px;height:17px;accent-color:var(--forest);cursor:pointer}
-.sig-wrap{border:1.5px solid var(--border);border-radius:3px;background:#fff;overflow:hidden}
-.sig-wrap canvas{display:block;width:100%;height:110px;cursor:crosshair;touch-action:none}
-.sig-bar{display:flex;justify-content:space-between;align-items:center;padding:5px 12px;background:var(--sec);border-top:1px solid var(--border)}
-.sig-bar span{font-size:11px;color:var(--light)}
-.btn-clr{font-size:12px;color:var(--forest-l);cursor:pointer;border:none;background:none;font-family:'Heebo',sans-serif;font-weight:600;padding:2px 8px;border-radius:2px;transition:background .15s}
-.btn-clr:hover{background:var(--gold-l)}
-table.htbl{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0 18px}
-table.htbl th{background:var(--forest);color:#fff;padding:9px 13px;text-align:right;font-weight:500}
-table.htbl td{padding:8px 13px;border-bottom:1px solid var(--border);color:var(--mid)}
-table.htbl tr:nth-child(even) td{background:var(--sec)}
-table.htbl tr:last-child td{border-bottom:none}
-.info-note{background:#f0f7f4;border-right:3px solid var(--forest-l);padding:11px 15px;font-size:13px;color:var(--mid);margin-bottom:18px;border-radius:0 3px 3px 0;line-height:1.7}
-.fitb{background:var(--sec);border:1px solid var(--border);border-radius:3px;padding:13px 16px;font-size:14px;line-height:2.2;color:var(--mid);margin-bottom:14px}
-.fitb input{display:inline-block;width:180px;padding:2px 8px;font-size:13px;vertical-align:middle;margin:0 4px}
-.blessing{text-align:center;padding:24px 28px;background:var(--warm);border:1px solid var(--border);border-top:3px solid var(--forest);border-radius:4px;margin:28px 0}
-.blessing p{font-family:'Frank Ruhl Libre',serif;font-size:15px;color:var(--forest);font-weight:600;line-height:2.2}
-.blessing .by{color:var(--light);font-size:13px;margin-top:8px;font-family:'Heebo',sans-serif;font-weight:400}
-.submit-area{text-align:center;padding:36px 20px}
-.btn-submit{background:linear-gradient(135deg,var(--forest),var(--forest-l));color:#fff;border:none;padding:15px 60px;font-family:'Frank Ruhl Libre',serif;font-size:18px;font-weight:700;border-radius:3px;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(45,74,62,.3)}
-.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(45,74,62,.4)}
-.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
-.foot{margin-top:12px;font-size:12px;color:var(--light)}
-.success{display:none;text-align:center;padding:60px 30px;background:var(--warm);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:4px}
-.success h2{font-family:'Frank Ruhl Libre',serif;color:var(--forest);font-size:26px;margin-bottom:10px}
-.loading{opacity:.6;pointer-events:none}
-@media(max-width:600px){.row{grid-template-columns:1fr}.form-header h1{font-size:20px}.contract-block,.form-sec{padding:18px}}
+  :root {
+    --cream: #faf7f2;
+    --warm-white: #fffef9;
+    --gold: #c9a84c;
+    --gold-light: #e8d5a3;
+    --gold-dark: #9a7a2e;
+    --forest: #2d4a3e;
+    --forest-light: #3d6355;
+    --text-dark: #1a1a1a;
+    --text-mid: #444;
+    --text-light: #777;
+    --border: #d4c5a9;
+    --required: #c0392b;
+    --section-bg: #f5f0e8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--cream);
+    font-family: 'Heebo', 'Arial Hebrew', sans-serif;
+    color: var(--text-dark);
+    direction: rtl;
+    min-height: 100vh;
+  }
+
+  .top-band { background: var(--forest); height: 6px; width: 100%; }
+  .gold-band { background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-light), var(--gold), var(--gold-dark)); height: 3px; width: 100%; }
+
+  .page-wrapper { max-width: 780px; margin: 0 auto; padding: 0 20px 60px; }
+
+  .form-header { text-align: center; padding: 48px 20px 36px; position: relative; }
+  .form-header::after { content: ''; display: block; width: 80px; height: 3px; background: linear-gradient(90deg, var(--gold-dark), var(--gold)); margin: 24px auto 0; border-radius: 2px; }
+  .header-ornament { font-size: 28px; margin-bottom: 12px; color: var(--gold); letter-spacing: 12px; }
+  .form-header h1 { font-family: 'Frank Ruhl Libre', serif; font-size: 28px; font-weight: 700; color: var(--forest); line-height: 1.5; margin-bottom: 8px; }
+  .form-header .subtitle { font-size: 15px; color: var(--text-light); font-weight: 400; letter-spacing: 0.5px; }
+
+  .contract-block { background: var(--warm-white); border: 1px solid var(--border); border-top: 3px solid var(--gold); border-radius: 4px; padding: 32px 36px; margin-bottom: 32px; line-height: 1.9; font-size: 14.5px; color: var(--text-mid); }
+  .contract-block p { margin-bottom: 10px; }
+  .contract-block u { text-decoration: none; font-weight: 600; color: var(--forest); border-bottom: 1.5px solid var(--gold-light); }
+
+  .section-title { display: flex; align-items: center; gap: 12px; margin: 40px 0 24px; }
+  .section-title::before, .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+  .section-title h2 { font-family: 'Frank Ruhl Libre', serif; font-size: 18px; font-weight: 700; color: var(--forest); white-space: nowrap; padding: 6px 20px; border: 1.5px solid var(--gold); border-radius: 2px; background: var(--warm-white); }
+
+  .form-section { background: var(--warm-white); border: 1px solid var(--border); border-radius: 4px; padding: 28px 32px; margin-bottom: 24px; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .field-row.single { grid-template-columns: 1fr; }
+  .field-group { display: flex; flex-direction: column; gap: 6px; }
+
+  label { font-size: 13px; font-weight: 600; color: var(--forest); display: flex; align-items: center; gap: 4px; }
+  .req { color: var(--required); font-size: 14px; }
+
+  input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+    width: 100%; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 3px; font-family: 'Heebo', sans-serif; font-size: 14px; background: var(--cream); outline: none;
+  }
+  input:focus, textarea:focus { border-color: var(--gold); background: #fff; }
+
+  .radio-group { display: flex; gap: 24px; padding: 6px 0; }
+  .radio-item { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; font-weight: 500; }
+
+  .sig-pad-wrap { border: 1.5px solid var(--border); border-radius: 3px; background: #fff; position: relative; }
+  .sig-pad-wrap canvas { display: block; width: 100%; height: 140px; cursor: crosshair; touch-action: none; }
+  .sig-actions { display: flex; justify-content: space-between; padding: 6px 12px; background: var(--section-bg); border-top: 1px solid var(--border); font-size: 12px; }
+  .btn-clear-sig { color: var(--forest-light); cursor: pointer; border: none; background: none; font-weight: 600; }
+
+  .info-note { background: #f0f7f4; border-right: 3px solid var(--forest-light); padding: 12px 16px; font-size: 13.5px; margin-bottom: 20px; line-height: 1.7; }
+  .fitb-line { background: var(--section-bg); border: 1px solid var(--border); border-radius: 3px; padding: 14px 18px; font-size: 14.5px; line-height: 2; margin-bottom: 16px; }
+  .fitb-line input { display: inline-block; width: 180px; padding: 2px 8px; margin: 0 4px; }
+
+  .submit-area { text-align: center; padding: 40px 20px; }
+  .submit-btn {
+    background: linear-gradient(135deg, var(--forest), var(--forest-light)); color: #fff; border: none; padding: 16px 64px;
+    font-family: 'Frank Ruhl Libre', serif; font-size: 18px; font-weight: 700; border-radius: 3px; cursor: pointer;
+    box-shadow: 0 4px 20px rgba(45, 74, 62, 0.3); transition: transform 0.2s;
+  }
+  .submit-btn:hover { transform: translateY(-2px); }
+  .submit-btn:disabled { background: #ccc; cursor: not-allowed; }
+
+  #successBox { display: none; text-align: center; padding: 60px 20px; background: var(--warm-white); border: 1px solid var(--border); border-radius: 8px; margin-top: 50px; }
+  #successBox h2 { color: var(--forest); font-family: 'Frank Ruhl Libre', serif; font-size: 32px; margin-bottom: 10px; }
+
+  @media (max-width: 600px) { .field-row { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
+
 <div class="top-band"></div>
 <div class="gold-band"></div>
 
 <div class="page-wrapper">
-  <div class="form-header">
-    <div class="ornament">✦ ✦ ✦</div>
-    <h1 id="hTitle">טוען...</h1>
-    <div class="sub" id="hSub"></div>
-  </div>
-
-  <div id="contractBlock" class="contract-block" style="display:none"></div>
-
-  <form id="mainForm" novalidate>
-
-    <!-- Section: Contract Signature -->
-    <div class="sec-title"><h2>חתימה על ההסכם</h2></div>
-    <div class="form-sec">
-      <div class="row single">
-        <div class="fg">
-          <label class="fl">פרטים ייחודיים על הילד/ה — רגישויות, מחלות, תחביבים וכו׳ <span class="req">*</span></label>
-          <textarea name="child_details" required></textarea>
-        </div>
-      </div>
-      <div class="row single">
-        <div class="fg">
-          <label class="fl">חתימה על ההסכם <span class="req">*</span></label>
-          <div class="sig-wrap"><canvas id="sig1" height="110"></canvas></div>
-          <div class="sig-bar"><span>חתמו כאן</span><button type="button" class="btn-clr" onclick="clrSig('sig1')">נקה</button></div>
-        </div>
-      </div>
+  <div id="formContainer">
+    <div class="form-header">
+      <div class="header-ornament">✦ ✦ ✦</div>
+      <h1>הסכם בין גן ילדים (הגן הקסום)<br>של עמותת הילה / ילדי רחל ברכה<br>לבין הורים לשנה"ל תשפ"ו</h1>
+      <div class="subtitle">ספט׳ 2025 — אוג׳ 2026</div>
     </div>
 
-    <!-- Section: Transport -->
-    <div class="sec-title"><h2>הצהרת הבאה והחזרה</h2></div>
-    <div class="form-sec">
-      <div class="info-note">באחריותכם לעדכן בכל שינוי במספרי הטלפון. הבאת הילדים למעון והחזרתם — באחריות בלעדית של ההורים.</div>
-      <div class="fitb">שם הילד: <input type="text" name="child_name_t1" required placeholder="שם"> תגיע/יגיע לגן בתחילת יום הלימודים ותחזור/יחזור על ידינו.</div>
-      <div class="fitb">שבני/ביתי: <input type="text" name="child_name_t2" required placeholder="שם"> תגיע/יגיע כל בוקר ותחזור בליווי אדם מבוגר שנבחר מטעמינו.</div>
-      <div class="row">
-        <div class="fg"><label class="fl">שם מלא <span class="req">*</span></label><input type="text" name="full_name" required></div>
-        <div class="fg"><label class="fl">מספר ת"ז <span class="req">*</span></label><input type="text" name="id_number" required></div>
+    <form id="mainForm">
+      <div class="contract-block">
+        <p><u>עבודה בימי חול:</u></p>
+        <p>בימים א׳ — ה׳ בין השעות 7:30 — 16:00<br>ובימי שישי בין השעות 07:30 — 12:00</p>
+        <p>בימי שבת וחג וכל יום המוגדר כשבתון במשק — אין פעילות בגן. בערבי חג הגן סגור.</p>
+        <p><u>ביטוח:</u><br>כל ילד מובטח מרגע כניסתו לגן הילדים ועד צאתו ממנו. איסור מוחלט לתת את הילד באמצע הדרך — אין ביטוח מחוץ לגן.</p>
+        <p><u>מחלה:</u><br>לא יתקבל למעון ילד חולה או עם חום. במקרה של חום מעל 37.5 ניצור קשר עם ההורים לאיסוף מוקדם.</p>
+        <p><u>תשלומים:</u><br>התשלום יועבר ב-12 המחאות דחויות. יש להשאיר את סעיף המוטב ריק.</p>
+        <p><u>אופי הגן:</u><br>הגן הוא גן חרדי ואבקש להתאים את אופי הלבוש וההתנהגות לרוח הגן.</p>
       </div>
-      <div class="row">
-        <div class="fg"><label class="fl">כתובת <span class="req">*</span></label><input type="text" name="address1" required></div>
-        <div class="fg"><label class="fl">טלפון בבית <span class="req">*</span></label><input type="tel" name="home_phone" required></div>
-      </div>
-      <div class="row">
-        <div class="fg"><label class="fl">טלפון נייד <span class="req">*</span></label><input type="tel" name="mobile" required></div>
-        <div class="fg"><label class="fl">טלפון אבא <span class="req">*</span></label><input type="tel" name="dad_phone" required></div>
-      </div>
-      <div class="row">
-        <div class="fg"><label class="fl">קרבה לילד <span class="req">*</span></label><input type="text" name="relation" placeholder="אבא/אמא, אח, שכן..." required></div>
-        <div class="fg"><label class="fl">שם האב/האם <span class="req">*</span></label><input type="text" name="parent_name_t" required></div>
-      </div>
-      <div class="row">
-        <div class="fg"><label class="fl">כתובת <span class="req">*</span></label><input type="text" name="parent_address_t" required></div>
-        <div class="fg"><label class="fl">תאריך <span class="req">*</span></label><input type="date" name="transport_date" required></div>
-      </div>
-      <div class="row single">
-        <div class="fg">
-          <label class="fl">חתימה <span class="req">*</span></label>
-          <div class="sig-wrap"><canvas id="sig2" height="110"></canvas></div>
-          <div class="sig-bar"><span>חתמו כאן</span><button type="button" class="btn-clr" onclick="clrSig('sig2')">נקה</button></div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Section: Expectations -->
-    <div class="sec-title"><h2>ציפיות מהמעון</h2></div>
-    <div class="form-sec">
-      <div class="row single"><div class="fg"><label class="fl">מבחינת הצוות</label><textarea name="exp_staff"></textarea></div></div>
-      <div class="row single"><div class="fg"><label class="fl">מבחינת הגן</label><textarea name="exp_gan"></textarea></div></div>
-      <div class="row single"><div class="fg"><label class="fl">מבחינת הניהול</label><textarea name="exp_mgmt"></textarea></div></div>
-      <div class="row single"><div class="fg"><label class="fl">ספרי לנו על ילדך — מה הוא אוהב, הרגלי שינה, מידע חשוב</label><textarea name="child_story"></textarea></div></div>
-    </div>
-
-    <div class="blessing">
-      <p id="blessingText">יהי רצון שנזכה לעשות חיל עם תינוקות של בית רבן<br>שנזכה יחד לגאולה שלמה במהרה, אמן ואמן.</p>
-      <p class="by" id="blessingBy">צוות הגן הקסום — בהנהלת הילה בוהדנה</p>
-    </div>
-
-    <!-- Section: Registration -->
-    <div class="sec-title"><h2>טופס הרשמה לשנה"ל <span id="yearSpan"></span></h2></div>
-    <div class="form-sec">
-      <div class="info-note">חתימת הורה אחד מהווה ראיה להסכמת שני ההורים לאמור בהסכם ולדף החופשות.</div>
-      <p style="font-weight:600;color:var(--forest);margin-bottom:16px">פרטי הילד/ה</p>
-      <div class="row">
-        <div class="fg"><label class="fl">שם הילד <span class="req">*</span></label><input type="text" name="child_first" required></div>
-        <div class="fg"><label class="fl">שם משפחה <span class="req">*</span></label><input type="text" name="child_last" required></div>
-      </div>
-      <div class="row">
-        <div class="fg">
-          <label class="fl">בן/בת <span class="req">*</span></label>
-          <div class="radio-g">
-            <label class="radio-item"><input type="radio" name="gender" value="בן" required> בן</label>
-            <label class="radio-item"><input type="radio" name="gender" value="בת"> בת</label>
+      <div class="section-title"><h2>חתימה על ההסכם</h2></div>
+      <div class="form-section">
+        <div class="field-row single">
+          <div class="field-group">
+            <label>פרטים ייחודיים על הילד/ה (רגישויות, אלרגיות, הערות) <span class="req">*</span></label>
+            <textarea name="child_notes" required></textarea>
           </div>
         </div>
-        <div class="fg"><label class="fl">תאריך לידה <span class="req">*</span></label><input type="date" name="birth_date" required></div>
-      </div>
-      <div class="row single"><div class="fg"><label class="fl">רגישויות ואלרגיה <span class="req">*</span></label><input type="text" name="allergies" required placeholder="למזון, תרופות, חומרים..."></div></div>
-
-      <p style="font-weight:600;color:var(--forest);margin:22px 0 16px">פרטי האם</p>
-      <div class="row">
-        <div class="fg"><label class="fl">שם האם <span class="req">*</span></label><input type="text" name="mother_name" required></div>
-        <div class="fg"><label class="fl">תחום עיסוק <span class="req">*</span></label><input type="text" name="mother_job" required></div>
-      </div>
-      <div class="row">
-        <div class="fg"><label class="fl">נייד אם <span class="req">*</span></label><input type="tel" name="mother_mobile" required></div>
-        <div class="fg"><label class="fl">טלפון בית <span class="req">*</span></label><input type="tel" name="home_phone2" required></div>
-      </div>
-
-      <p style="font-weight:600;color:var(--forest);margin:22px 0 16px">פרטי האב</p>
-      <div class="row">
-        <div class="fg"><label class="fl">שם האב <span class="req">*</span></label><input type="text" name="father_name" required></div>
-        <div class="fg"><label class="fl">תחום עיסוק <span class="req">*</span></label><input type="text" name="father_job" required></div>
-      </div>
-      <div class="row">
-        <div class="fg"><label class="fl">נייד אב <span class="req">*</span></label><input type="tel" name="father_mobile" required></div>
-        <div class="fg"><label class="fl">טל׳ סבא/סבתא</label><input type="tel" name="grandparent_phone"></div>
-      </div>
-
-      <div class="row">
-        <div class="fg"><label class="fl">כתובת <span class="req">*</span></label><input type="text" name="address_reg" required></div>
-        <div class="fg"><label class="fl">דוא"ל <span class="req">*</span></label><input type="email" name="email" required placeholder="example@example.com"></div>
-      </div>
-      <div class="row">
-        <div class="fg"><label class="fl">קופת חולים <span class="req">*</span></label><input type="text" name="hmo" required></div>
-      </div>
-      <div class="row single">
-        <div class="fg">
-          <label class="fl">חתימה <span class="req">*</span></label>
-          <div class="sig-wrap"><canvas id="sig3" height="110"></canvas></div>
-          <div class="sig-bar"><span>חתמו כאן</span><button type="button" class="btn-clr" onclick="clrSig('sig3')">נקה</button></div>
+        <div class="field-group">
+          <label>חתימה על ההסכם <span class="req">*</span></label>
+          <div class="sig-pad-wrap">
+            <canvas id="sig1"></canvas>
+            <div class="sig-actions"><span>חתמו כאן</span><button type="button" class="btn-clear-sig" onclick="clearSig('sig1')">נקה</button></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Section: Health -->
-    <div class="sec-title"><h2>הצהרת בריאות</h2></div>
-    <div class="form-sec">
-      <div class="row single"><div class="fg"><label class="fl">אני הח"מ, ההורים/האפוטרופוס של הילד/ה <span class="req">*</span></label><input type="text" name="guardian" required></div></div>
-      <div class="info-note">מצהיר/ת: לא ידוע לי על בעיה בריאותית המחייבת טיפול מיוחד במסגרת הגן.</div>
-      <div class="row single"><div class="fg"><label class="fl">ליקוי שמיעה או ראיה <span class="req">*</span></label><textarea name="hearing_vision" required></textarea></div></div>
-      <div class="row single"><div class="fg"><label class="fl">התעלפויות, התכווצויות, עצירת נשימה <span class="req">*</span></label><textarea name="fainting" required></textarea></div></div>
-      <div class="row single"><div class="fg"><label class="fl">אחר</label><textarea name="other_health"></textarea></div></div>
-      <div class="info-note">הנני מתחייב/ת להודיע מיידית על כל שינוי בריאותי. הפרת ההתחייבות תעניק למעון זכות לשלול המשך חינוך הילד.</div>
-      <div class="row">
-        <div class="fg"><label class="fl">סוג דם</label><input type="text" name="blood_type" placeholder="A+, B-, O+..."></div>
-        <div class="fg"><label class="fl">שם קופת החולים <span class="req">*</span></label><input type="text" name="hmo2" required></div>
-      </div>
-      <div class="row">
-        <div class="fg"><label class="fl">תאריך <span class="req">*</span></label><input type="date" name="health_date" required></div>
-      </div>
-      <div class="row single">
-        <div class="fg">
-          <label class="fl">חתימה <span class="req">*</span></label>
-          <div class="sig-wrap"><canvas id="sig4" height="110"></canvas></div>
-          <div class="sig-bar"><span>חתמו כאן</span><button type="button" class="btn-clr" onclick="clrSig('sig4')">נקה</button></div>
+      <div class="section-title"><h2>הצהרת הבאה והחזרה</h2></div>
+      <div class="form-section">
+        <div class="info-note">הבאת הילדים והחזרתם הן באחריות הבלעדית של ההורים.</div>
+        <div class="fitb-line">
+          שם הילד/ה: <input type="text" name="child_name" required> תגיע ותחזור מהגן בליווי אדם מבוגר שנבחר מטעמנו.
+        </div>
+        <div class="field-row">
+          <div class="field-group"><label>שם ההורה <span class="req">*</span></label><input type="text" name="parent_name" required></div>
+          <div class="field-group"><label>מספר ת"ז <span class="req">*</span></label><input type="text" name="parent_id" required></div>
+        </div>
+        <div class="field-row">
+          <div class="field-group"><label>טלפון נייד <span class="req">*</span></label><input type="tel" name="mobile" required></div>
+          <div class="field-group"><label>כתובת <span class="req">*</span></label><input type="text" name="address" required></div>
+        </div>
+        <div class="field-group">
+          <label>חתימת הורה <span class="req">*</span></label>
+          <div class="sig-pad-wrap">
+            <canvas id="sig2"></canvas>
+            <div class="sig-actions"><span>חתמו כאן</span><button type="button" class="btn-clear-sig" onclick="clearSig('sig2')">נקה</button></div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Section: Holidays -->
-    <div class="sec-title"><h2>לוח חופשות</h2></div>
-    <div class="form-sec">
-      <table class="htbl" id="holidayTable">
-        <thead><tr><th>חג</th><th>תאריכים</th><th>הערות</th></tr></thead>
-        <tbody id="holidayBody"></tbody>
-      </table>
-      <div class="info-note">בחתימה על דף החופשות ההורים מודעים ומסכימים ללוח תאריכי החופשות.</div>
-      <div class="row single">
-        <div class="fg">
-          <label class="fl">חתימה על לוח חופשות <span class="req">*</span></label>
-          <div class="sig-wrap"><canvas id="sig5" height="110"></canvas></div>
-          <div class="sig-bar"><span>חתמו כאן</span><button type="button" class="btn-clr" onclick="clrSig('sig5')">נקה</button></div>
-        </div>
+      <div class="submit-area">
+        <button type="submit" class="submit-btn" id="submitBtn">שליחת ההסכם החתום</button>
+        <p style="margin-top:15px; font-size:12px; color:var(--text-light);">בלחיצה על השליחה אתם מאשרים את כל סעיפי החוזה.</p>
       </div>
-    </div>
+    </form>
+  </div>
 
-    <div class="submit-area">
-      <button type="submit" class="btn-submit" id="submitBtn">שליחה</button>
-      <p class="foot">שדות <span style="color:var(--red)">*</span> הם חובה</p>
-    </div>
-  </form>
-
-  <div class="success" id="successBox">
-    <div style="font-size:44px;color:var(--gold);margin-bottom:14px">✦</div>
-    <h2>תודה! הטופס נשלח בהצלחה</h2>
-    <p style="color:var(--light);margin-top:8px">נשמח לראות את ילדכם בגן הקסום!</p>
+  <div id="successBox">
+    <div style="font-size: 50px; margin-bottom: 20px;">🌿</div>
+    <h2>ההסכם נשלח בהצלחה!</h2>
+    <p>תודה רבה, צוות גן הקסום מאחל לכם שנה פורייה ומוצלחת.</p>
   </div>
 </div>
 
 <script>
-const API = '';
-const sigs = {};
+  const API = window.location.origin;
+  const sigPads = {};
 
-// ── Load config ──────────────────────────────────────────────
-async function loadConfig() {
-  try {
-    const r = await fetch(API + '/api/config');
-    const c = await r.json();
-    document.getElementById('hTitle').textContent =
-      `הסכם בין ${c.ganName}\nשל ${c.associationName}\nלבין הורים לשנה"ל ${c.year}`;
-    document.getElementById('hSub').textContent = c.yearDates || '';
-    document.getElementById('yearSpan').textContent = c.year || '';
-    document.getElementById('contractBlock').textContent = c.contractText || '';
-    document.getElementById('contractBlock').style.display = 'block';
-    document.getElementById('blessingBy').textContent =
-      `צוות ${c.ganName} — בהנהלת ${c.managerName}`;
-
-    // Holidays
-    const tb = document.getElementById('holidayBody');
-    tb.innerHTML = '';
-    (c.holidays || []).forEach(h => {
-      tb.innerHTML += `<tr><td>${h.name}</td><td>${h.dates}</td><td>${h.notes||''}</td></tr>`;
-    });
-  } catch(e) {
-    document.getElementById('hTitle').textContent = 'הגן הקסום — הסכם הורים';
-  }
-}
-
-// ── Signature pads ───────────────────────────────────────────
-function initSig(id) {
-  const canvas = document.getElementById(id);
-  if (!canvas) return;
-  // Resize canvas to actual display size
-  function resize() {
-    const r = canvas.getBoundingClientRect();
-    canvas.width = r.width * window.devicePixelRatio;
-    canvas.height = r.height * window.devicePixelRatio;
+  // אתחול משטחי חתימה
+  function initSig(id) {
+    const canvas = document.getElementById(id);
+    if (!canvas) return;
+    
     const ctx = canvas.getContext('2d');
-    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+    let drawing = false;
+
+    // התאמת גודל הקנבס
+    function resize() {
+      const ratio = Math.max(window.devicePixelRatio || 1, 1);
+      canvas.width = canvas.offsetWidth * ratio;
+      canvas.height = canvas.offsetHeight * ratio;
+      ctx.scale(ratio, ratio);
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    const getPos = e => {
+      const rect = canvas.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      return { x: clientX - rect.left, y: clientY - rect.top };
+    };
+
+    const start = e => { drawing = true; ctx.beginPath(); const p = getPos(e); ctx.moveTo(p.x, p.y); };
+    const move = e => { if (!drawing) return; e.preventDefault(); const p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); };
+    const stop = () => { drawing = false; };
+
+    ctx.strokeStyle = '#1a1a2e'; ctx.lineWidth = 2; ctx.lineCap = 'round';
+    canvas.addEventListener('mousedown', start);
+    canvas.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', stop);
+    canvas.addEventListener('touchstart', start);
+    canvas.addEventListener('touchmove', move);
+    canvas.addEventListener('touchend', stop);
+
+    sigPads[id] = { canvas, ctx, clear: () => ctx.clearRect(0, 0, canvas.width, canvas.height) };
   }
-  setTimeout(resize, 50);
 
-  const ctx = canvas.getContext('2d');
-  let drawing = false, hasData = false;
+  function clearSig(id) { if (sigPads[id]) sigPads[id].clear(); }
 
-  function pos(e) {
-    const r = canvas.getBoundingClientRect();
-    const src = e.touches ? e.touches[0] : e;
-    return { x: src.clientX - r.left, y: src.clientY - r.top };
-  }
+  // הפעלה לכל ה-sig
+  ['sig1', 'sig2', 'sig3', 'sig4', 'sig5'].forEach(initSig);
 
-  function start(e) {
-    drawing = true;
-    const p = pos(e);
-    ctx.beginPath(); ctx.moveTo(p.x, p.y);
-    ctx.strokeStyle = '#1a1a2e'; ctx.lineWidth = 2; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-  }
-  function move(e) {
-    if (!drawing) return;
-    const p = pos(e);
-    ctx.lineTo(p.x, p.y); ctx.stroke();
-    hasData = true;
-  }
-  function end() { drawing = false; }
+  // שליחת הטופס
+  document.getElementById('mainForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'שולח...';
 
-  canvas.addEventListener('mousedown', start);
-  canvas.addEventListener('mousemove', move);
-  canvas.addEventListener('mouseup', end);
-  canvas.addEventListener('mouseleave', end);
-  canvas.addEventListener('touchstart', e => { e.preventDefault(); start(e); }, { passive: false });
-  canvas.addEventListener('touchmove', e => { e.preventDefault(); move(e); }, { passive: false });
-  canvas.addEventListener('touchend', end);
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
 
-  sigs[id] = {
-    hasData: () => hasData,
-    reset: () => {
-      ctx.clearRect(0, 0, canvas.width / window.devicePixelRatio, canvas.height / window.devicePixelRatio);
-      hasData = false;
-    },
-    toDataURL: () => canvas.toDataURL('image/png')
-  };
-}
-
-function clrSig(id) { if (sigs[id]) sigs[id].reset(); }
-
-['sig1','sig2','sig3','sig4','sig5'].forEach(initSig);
-
-// ── Form submit ──────────────────────────────────────────────
-document.getElementById('mainForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  let valid = true;
-
-  // Validate required inputs
-  this.querySelectorAll('[required]').forEach(el => {
-    if (el.type === 'radio') return;
-    el.classList.remove('error');
-    if (!el.value.trim()) { el.classList.add('error'); valid = false; }
-  });
-
-  if (!this.querySelector('input[name=gender]:checked')) valid = false;
-
-  if (!valid) { alert('נא למלא את כל שדות החובה.'); return; }
-
-  const btn = document.getElementById('submitBtn');
-  btn.disabled = true; btn.textContent = 'שולח...';
-
-  // Collect form data
-  const fd = new FormData(this);
-  const data = {};
-  fd.forEach((v, k) => { data[k] = v; });
-
-  // Add signatures
-  ['sig1','sig2','sig3','sig4','sig5'].forEach(id => {
-    data[id] = sigs[id] ? sigs[id].toDataURL() : '';
-  });
-
-  try {
-    const r = await fetch(API + '/api/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
+    // הוספת החתימות כ-Base64
+    ['sig1', 'sig2', 'sig3', 'sig4', 'sig5'].forEach(id => {
+      if (sigPads[id]) data[id] = sigPads[id].canvas.toDataURL();
     });
-    const res = await r.json();
-    if (res.success) {
-      this.style.display = 'none';
-      document.getElementById('successBox').style.display = 'block';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else { throw new Error(res.error); }
-  } catch(err) {
-    alert('שגיאה בשליחה: ' + err.message);
-    btn.disabled = false; btn.textContent = 'שליחה';
-  }
-});
 
-loadConfig();
+    try {
+      const response = await fetch(API + '/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        document.getElementById('formContainer').style.display = 'none';
+        document.getElementById('successBox').style.display = 'block';
+        window.scrollTo(0, 0);
+      } else {
+        alert('חלה שגיאה בשליחה. נסו שוב.');
+        btn.disabled = false;
+        btn.textContent = 'שליחת ההסכם החתום';
+      }
+    } catch (err) {
+      alert('שגיאת תקשורת עם השרת.');
+      btn.disabled = false;
+    }
+  });
 </script>
 </body>
 </html>
